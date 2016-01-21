@@ -1,8 +1,8 @@
 package com.kakaotrack.le.controller;
 
-import com.kakaotrack.le.object.Comment;
-import com.kakaotrack.le.object.Lecture;
-import com.kakaotrack.le.object.User;
+import com.kakaotrack.le.domain.Comment;
+import com.kakaotrack.le.domain.Lecture;
+import com.kakaotrack.le.domain.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,12 +22,12 @@ public class RestServiceController {
     }
 
     @RequestMapping("/comment")
-    public Comment comment(){
+    public Comment comment() {
         return new Comment();
     }
 
     @RequestMapping("/user")
-    public User user(){
+    public User user() {
         return new User();
     }
 }

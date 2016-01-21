@@ -13,4 +13,7 @@ public class PageController {
         return "home";
     }
 
+    @RequestMapping("/main")
+    public String main() { return "main"; }
+    
 }

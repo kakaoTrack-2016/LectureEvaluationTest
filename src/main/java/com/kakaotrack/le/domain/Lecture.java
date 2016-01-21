@@ -1,4 +1,4 @@
-package com.kakaotrack.le.object;
+package com.kakaotrack.le.domain;
 
 /**
  * Created by Kim on 2016-01-18.

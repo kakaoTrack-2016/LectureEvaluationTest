@@ -1,9 +1,18 @@
-package com.kakaotrack.le.object;
+package com.kakaotrack.le.domain;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  * Created by Kim on 2016-01-18.
  */
+
 public class User {
+
+    private int no;
+    private String id;
+    private String name;
 
     public int getNo() {
         return no;
@@ -16,8 +25,4 @@ public class User {
     public String getName() {
         return name;
     }
-
-    private int no;
-    private String id;
-    private String name;
 }
