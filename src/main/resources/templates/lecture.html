@@ -14,14 +14,13 @@
 </div>
 
 <div class="container fluid text-center">
-    <h2>학과 목록</h2>
-
-    <div class="panel col-sm-6" th:each="department : ${department_list}">
-        <form th:action="@{/department}" method="post">
-            <input class="btn btn-default" type="submit" th:name="name" th:value="${department}"/>
-        </form>
+    <div class="panel panel-primary">
+        <div class="panel-heading" th:text="${lecture.title}"></div>
+        <div class="panel-body" th:text="${lecture.department}"></div>
+        <div class="panel-body" th:text="${lecture.professor}"></div>
+        <div class="panel-body" th:text="${lecture.type}"></div>
+        <div class="panel-body" th:text="${lecture.information}"></div>
     </div>
-
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

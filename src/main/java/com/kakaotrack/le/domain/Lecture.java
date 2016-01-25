@@ -14,6 +14,7 @@ public class Lecture {
     @Id
     private int id;
     private String department;
+    private int grade;
     private String type;
     private String professor;
     private String title;
@@ -28,6 +29,8 @@ public class Lecture {
     public String getDepartment() {
         return department;
     }
+
+    public int getGrade() { return grade;}
 
     public String getType() {
         return type;

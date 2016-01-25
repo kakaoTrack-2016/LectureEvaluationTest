@@ -1,10 +1,10 @@
 package com.kakaotrack.le.repository;
 
-import com.kakaotrack.le.domain.Grade;
+import com.kakaotrack.le.domain.Rating;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  * Created by 김 on 2016-01-25.
  */
-public interface GradeRepository extends CrudRepository<Grade, Integer> {
+public interface RatingRepository extends CrudRepository<Rating, Integer> {
 }

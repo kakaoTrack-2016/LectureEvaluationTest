@@ -9,7 +9,7 @@ import javax.persistence.Id;
  * Created by 김 on 2016-01-25.
  */
 @Entity
-public class Grade {
+public class Rating {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,7 +19,7 @@ public class Grade {
     private int honey_point;
     private int learning_point;
 
-    public Grade(int lecture_id, int user_id, int honey_point, int learning_point) {
+    public Rating(int lecture_id, int user_id, int honey_point, int learning_point) {
         this.lecture_id = lecture_id;
         this.user_id = user_id;
         this.honey_point = honey_point;
