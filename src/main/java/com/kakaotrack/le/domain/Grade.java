@@ -9,22 +9,21 @@ import javax.persistence.Id;
  * Created by 김 on 2016-01-25.
  */
 @Entity
-public class Comment {
+public class Grade {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-
     private int lecture_id;
-    private int member_id;
-    private String description;
-    private int like_count;
+    private int user_id;
+    private int honey_point;
+    private int learning_point;
 
-    public Comment(int lecture_id, int member_id, String description, int like_count) {
+    public Grade(int lecture_id, int user_id, int honey_point, int learning_point) {
         this.lecture_id = lecture_id;
-        this.member_id = member_id;
-        this.description = description;
-        this.like_count = like_count;
+        this.user_id = user_id;
+        this.honey_point = honey_point;
+        this.learning_point = learning_point;
     }
 
     public int getId() {
@@ -35,15 +34,15 @@ public class Comment {
         return lecture_id;
     }
 
-    public int getMember_id() {
-        return member_id;
+    public int getUser_id() {
+        return user_id;
     }
 
-    public String getDescription() {
-        return description;
+    public int getHoney_point() {
+        return honey_point;
     }
 
-    public int getLike_count() {
-        return like_count;
+    public int getLearning_point() {
+        return learning_point;
     }
 }
