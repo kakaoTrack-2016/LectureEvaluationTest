@@ -16,7 +16,7 @@
 <div class="container fluid text-center">
     <h2>학과 목록</h2>
 
-    <div class="panel col-sm-6" th:each="department : ${department_list}">
+    <div class="col-sm-6" th:each="department : ${department_list}">
         <form th:action="@{/department}" method="post">
             <input class="btn btn-default" type="submit" th:name="name" th:value="${department}"/>
         </form>

@@ -31,6 +31,7 @@ public class PageController {
     @RequestMapping(value = "/department", method = RequestMethod.POST)
     public String department(String name, Model model) {
         List lectureList = lectureRepository.findByDepartment(name);
+        model.addAttribute("department", name);
         model.addAttribute("lecture_list", lectureList);
         return "department";
     }

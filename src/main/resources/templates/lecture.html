@@ -15,11 +15,12 @@
 
 <div class="container fluid text-center">
     <div class="panel panel-primary">
-        <div class="panel-heading" th:text="${lecture.title}"></div>
-        <div class="panel-body" th:text="${lecture.department}"></div>
-        <div class="panel-body" th:text="${lecture.professor}"></div>
-        <div class="panel-body" th:text="${lecture.type}"></div>
-        <div class="panel-body" th:text="${lecture.information}"></div>
+        <div class="panel-heading" th:text="${'강좌명 : '+lecture.title}">제목</div>
+        <div class="panel-body" th:text="${'학과 : '+lecture.department}">학과</div>
+        <div class="panel-body" th:text="${'교수 : '+lecture.professor}">교수</div>
+        <div class="panel-body" th:text="${'학년 : '+lecture.grade}">교수</div>
+        <div class="panel-body" th:text="${lecture.type}">유형</div>
+        <div class="panel-body" th:text="${lecture.information}">정보</div>
     </div>
 </div>
 

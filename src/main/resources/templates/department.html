@@ -14,14 +14,16 @@
 </div>
 
 <div class="container fluid text-center">
-    <h2>강의 목록</h2>
-    <div class="col-sm-6 panel panel-primary text-center" th:each="lecture : ${lecture_list}">
-        <div class="panel-heading" th:text="${lecture.title}"></div>
-        <div class="panel-body">
-            <p th:text="${lecture.professor}"></p>
-            <p th:text="${lecture.grade}"></p>
-            <p th:text="${lecture.information}"></p>
-            <a th:href="${'/lecture?id=' + lecture.id}">자세한 정보</a>
+    <h2 th:text="${department + ' 강의 목록'}">강의 목록</h2>
+    <div class="col-sm-6" th:each="lecture : ${lecture_list}">
+        <div class="panel panel-primary text-center">
+            <div class="panel-heading" th:text="${lecture.title}"></div>
+            <div class="panel-body">
+                <p th:text="${lecture.professor}"></p>
+                <p th:text="${lecture.grade}"></p>
+                <p th:text="${lecture.information}"></p>
+                <a th:href="${'/lecture?id=' + lecture.id}">자세한 정보</a>
+            </div>
         </div>
     </div>
 </div>
